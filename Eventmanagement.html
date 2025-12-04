@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Elite Events | Event Management Company</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <style>
+       
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body {
+    font-family: 'Poppins', sans-serif;
+    color: black;
+    background-color:white;
+    line-height: 1.6;
+}
+
+header {
+    background-color: black;
+    color: white;
+    padding: 20px 0;
+}
+header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 85%;
+    margin: auto;
+}
+header h1 {
+    font-size: 28px;
+    letter-spacing: 1px;
+}
+nav ul {
+    display: flex;
+    list-style: none;
+}
+nav ul li {
+    margin-left: 25px;
+}
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    transition: 0.3s;
+}
+nav ul li a:hover {
+    color: orange;
+}
+
+
+.hero {
+    background: url('https://i.pinimg.com/736x/cf/df/71/cfdf7123f69072b4986167c7133b814e.jpg') center/cover no-repeat;
+    height: 80vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    text-align: center;
+}
+.hero-content {
+    background: black;
+    padding: 40px;
+    border-radius: 10px;
+}
+.hero h2 {
+    font-size: 42px;
+    margin-bottom: 15px;
+}
+.btn {
+    display: inline-block;
+    padding: 12px 25px;
+    background: orange;
+    color:black;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-top: 10px;
+    transition: 0.3s;
+}
+.btn:hover {
+    background:orange;
+}
+
+
+.events-section {
+    padding: 60px 10%;
+    background: white;
+    text-align: center;
+}
+.event-list {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin-top: 30px;
+}
+.event-card {
+    background:white;
+    width: 300px;
+    margin: 15px;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    transition: 0.3s;
+}
+.event-card:hover {
+    transform: translateY(-5px);
+}
+.event-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+.event-card h3 {
+    margin: 15px 0 5px;
+}
+.event-card p {
+    padding: 0 15px 20px;
+}
+
+.booking-section {
+    background:white;
+    padding: 60px 10%;
+    text-align: center;
+}
+.booking-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 500px;
+    margin: auto;
+}
+.booking-form input,
+.booking-form select,
+.booking-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 5px;
+    border: 1px solid white;
+    font-size: 15px;
+}
+.booking-form textarea {
+    height: 100px;
+}
+
+
+.testimonials-section {
+    padding: 60px 10%;
+    background: white;
+    text-align: center;
+}
+.testimonial-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin-top: 30px;
+}
+.testimonial {
+    background: white;
+    border-left: 5px solid #ffb703;
+    padding: 20px;
+    width: 300px;
+    margin: 10px;
+    border-radius: 5px;
+    box-shadow: 0 3px 8px black;
+}
+.testimonial h4 {
+    margin-top: 10px;
+    color: brown;
+}
+
+
+footer {
+    background:black;
+    color: white;
+    text-align: center;
+    padding: 25px 10%;
+    font-size: 14px;
+}
+
+
+@media (max-width: 768px) {
+    .event-list, .testimonial-list {
+        flex-direction: column;
+        align-items: center;
+    }
+    header .container {
+        flex-direction: column;
+    }
+    nav ul {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+}
+
+    </style>
+   
+    <header>
+        <div class="container">
+            <h1>Elite Events</h1>
+            <nav>
+                <ul>
+                    <li><a href="#events">Events</a></li>
+                    <li><a href="#booking">Booking</a></li>
+                    <li><a href="#testimonials">Testimonials</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+   
+    <section class="hero">
+        <div class="hero-content">
+            <h2>Crafting Unforgettable Experiences</h2>
+            <p>We design, plan, and manage exceptional events tailored just for you.</p>
+            <a href="#booking" class="btn">Book Your Event</a>
+        </div>
+    </section>
+
+   
+    <section id="events" class="events-section">
+        <h2>Our Featured Events</h2>
+        <div class="event-list">
+            <div class="event-card">
+                <img src="https://images.unsplash.com/photo-1529626455594-4ff0802cfb7e" alt="Wedding">
+                <h3>Weddings</h3>
+                <p>From intimate gatherings to grand celebrations — we make your day magical.</p>
+            </div>
+            <div class="event-card">
+                <img src="https://images.unsplash.com/photo-1531058020387-3be344556be6" alt="Corporate Event">
+                <h3>Corporate Events</h3>
+                <p>Seamless organization for conferences, launches, and team-building events.</p>
+            </div>
+            <div class="event-card">
+                <img src="https://marketplace.canva.com/MAC4j0NIO2k/1/thumbnail_large-1/canva-birthday-cake-with-candles-MAC4j0NIO2k.jpg" alt="Birthday Party">
+                <h3>Birthday Parties</h3>
+                <p>Unique and personalized birthday celebrations for all ages and themes.</p>
+            </div>
+        </div>
+    </section>
+
+    
+    <section id="booking" class="booking-section">
+        <h2>Book Your Event</h2>
+        <p>Fill in the details below and we’ll get in touch with you shortly.</p>
+        <form class="booking-form">
+            <input type="text" placeholder="Full Name" required>
+            <input type="email" placeholder="Email Address" required>
+            <input type="tel" placeholder="Phone Number" required>
+            <select required>
+                <option value="">Select Event Type</option>
+                <option>Wedding</option>
+                <option>Corporate Event</option>
+                <option>Birthday Party</option>
+                <option>Other</option>
+            </select>
+            <textarea placeholder="Additional Details"></textarea>
+            <button type="submit" class="btn">Submit Booking</button>
+        </form>
+    </section>
+
+    <section id="testimonials" class="testimonials-section">
+        <h2>What Our Clients Say</h2>
+        <div class="testimonial-list">
+            <div class="testimonial">
+                <p>“Elite Events made our wedding day absolutely perfect. Every detail was flawless!”</p>
+                <h4>— Saurabh </h4>
+            </div>
+            <div class="testimonial">
+                <p>“Professional, creative, and stress-free planning. Highly recommended for any corporate function.”</p>
+                <h4>— Shivanshu</h4>
+            </div>
+            <div class="testimonial">
+                <p>“My friend birthday party was magical! Thank you for making her dreams come true.”</p>
+                <h4>— Raj</h4>
+            </div>
+        </div>
+    </section>
+
+   
+    <footer id="contact">
+        <p> Elite Events | 123 Celebration Avenue, GHAZIABAD, NY</p>
+        <p> 12565245565 | ✉️ contact@eliteevents.com</p>
+        <p>&copy; 2025 Elite Events. All rights reserved.</p>
+    </footer>
+</body>
+</html>
